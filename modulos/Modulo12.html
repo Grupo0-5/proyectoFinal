@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 12</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 12</h1>
+        <h2 id="logo1">CMD y Packet Tracer</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/Modulo9.html">Modulo 9</a></li>
+            <li ><a href="../modulos/Modulo10.html">Modulo 10</a></li>
+            <li ><a href="../modulos/Modulo11.html">Modulo 11</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo12.html">Modulo 12</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Comandos CMD</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                    <h3>Comandos de CMD para redes</h3>
+                    Un usuario avanzado puede sentirse bastante limitado al manejar redes en Windows a través de la herramienta del 
+                    sistema operativo situada en el panel de control. Si deseas acceder a todo lo que el
+                     sistema operativo tiene que ofrecer, tendrás que utilizar el símbolo del sistema, consola o CMD.<br> <br>
+                     Podemos acceder al CMD desde el menú de Inicio> Todos los programas> Accesorios> símbolo del sistema. También mediante la barra de búsqueda o archivos del menú de inicio introduciendo “cmd” o “símbolo del sistema” . En Windows 8 o Windows 10, 
+                     el acceso más sencillo lo encontramos en el menú de usuario avanzado haciendo clic secundario en el botón de inicio <br>
+                     <td><img src="../Imagenes/modulo 12/modulo12.1.jpg" alt="" height="250"></td>
+               
+               <h4><b>8 Comandos Basicos</b></h4>
+               <ul>
+                   <li>ipconfig:
+                    Es uno de los comandos para redes más útiles. Informa de los valores de configuración de red TCP/IP actuales y actualiza la configuración del protocolo DHCP y el sistema de nombres de dominio (DNS).</li>
+                    <li>ping:
+                        Prueba el estado de la comunicación del host local con uno o varios equipos remotos de una red IP. Por medio del envío de paquetes ICMP, diagnostica el estado, velocidad y calidad de una red determinada.</li>
+                    <li>tracert:
+                        Permite conocer los paquetes que vienen desde un host (punto de red). También se obtiene una estadística del RTT o latencia de red de esos paquetes, ofreciendo una estimación de la distancia a la que están los extremos de la comunicación. 
+                         </li>    
+                         <td><img src="../Imagenes/modulo 12/modulo12.2.jpg" alt="" height="250"></td>
+                    
+                        
+                        <li> pathping: 
+                         Combina la utilidad de ping y tracert. Es más informativo, por lo que tarda más tiempo para ejecutar. Después de enviar los paquetes a un destino determinado, se analiza la ruta tomada y se calcula la pérdida de paquetes y proporciona detalles entre dos host. </li>
+                         
+                         <li>Getmac:
+                         Obtiene la mac del equipo donde se ejecuta. La dirección MAC es un identificador de 48 bits determinado y configurado por el IEEE y el fabricante (24 bits cada uno). Conocida también como dirección física es única para cada dispositivo.</li>
+                         
+                         <li>nslookup:
+                         Se emplea para conocer si el DNS está resolviendo correctamente los nombres y las IPs. También nos permite averiguar la dirección IP detrás de un determinado nombre de dominio. </li>
+                         <td><img src="../Imagenes/modulo 12/modulo12.3.jpg" alt="" height="250"></td>
+
+
+                         <li> netstat: 
+Comando potente que muestra estadísticas de la red y permite diagnósticos y análisis. Por defecto, muestra un listado de las conexiones activas de una computadora, tanto entrantes como salientes. Incluye el protocolo en uso, las tablas de ruteo, las estadísticas de las interfaces y el estado de la conexión.</li>
+
+<li> netsh:
+Sinónimo de shell de red, permite modificar, administrar y diagnosticar la configuración de una red, con más detalle y potencia que los anteriores. Un comando avanzado que ofrece un montón de opciones utilizando sus modificadores y que como ejemplo, permite cambiar el DNS primario y secundario de un equipo.</li>
+<td><img src="../Imagenes/modulo 12/modulo12.4.png" alt="" height="250"></td>
+               </ul>
+               
+        
+                
+                </p>
+                  
+            <p>
+                <h3>Direcciones IP y Mascaras de SubRed</h3>
+                <h4><b>¿Que es una Direccion IP?</b></h4>
+                La dirección IP es una dirección lógiconumérica asignada a cada ordenador, 
+                impresora, switch Gigabit Ethernet, router o cualquier otro dispositivo de una red basada en TCP/IP.
+                 Es decir, cada uno de estos dispositivos posee una dirección IP única. Las direcciones IP se configuran 
+                 manualmente (dirección IP estática) o se configuran mediante un servidor DHCP. Una dirección IP consiste en 4 bytes de datos.  Un byte consta de 8 bits (un bit es un solo dígito y sólo puede ser una cifra entre 1 y 0), por lo que tenemos un total de 32 bits para cada dirección IP. Este es un ejemplo de dirección IP en binario: 10101100. 00010000. 11111110.00000001. En aras de facilitar las cosas, la representación decimal se suele emplear de manera que la dirección IP quede así: 172. 16. 254. 1 <br> <b></b>
+                 <td><img src="../Imagenes/modulo 12/modulo12.5.png" alt="" height="250"></td>
+                 
+                 <h4><b>¿Que es una Mascara de subred?</b></h4>
+                 Una máscara de subred es un número de 32 ó 128 bits que segmenta una dirección IP existente en una red TCP/IP. El protocolo TCP/IP la utiliza para determinar si un host se encuentra en la subred local o en una red remota. La máscara de subred divide la dirección IP en una dirección de red y en una de host. <br>
+                 <td><img src="../Imagenes/modulo 12/modulo12.6.png" alt="" height="250"></td>
+
+
+                <h3>Rangos de Direcciones IP Privadas y Publicas</h3>
+                <h4><b>IP Privada</b></h4>
+                La dirección IP privada es una dirección fija que se asigna a cada dispositivo conectado a una red privada o doméstica, 
+                es decir, la dirección IP que el router asigna a cada ordenador, smartphones, smart TV, tablet, videoconsola o cualquier otro dispositivo conectado a él. Así, cada dispositivo conectado a un router tiene su propia dirección IP privada, mientras comparten la misma IP pública.
+                Las IP’s privadas no son accesibles desde Internet y no cambian, a no ser que las 
+                asignemos nosotros manualmente.
+                Rangos de IP privadas
+                       <h4><b>Rangos de IP privadas</b></h4>
+                       <ul>
+                           <li><b> Rango clase A</b> 
+                            El rango de clase A es el que emplean las grandes empresas, puesto que permite crear hasta 126 redes distintas y conectar hasta un máximo de 16.777.214 equipos a la red.
+                            Este rango se encuentra entre estos números: 10.0.0.0 a 10.255.255.255. El primer bloque de la dirección identifica la red y los otros tres bloques identifican a los dispositivos que se conectan a la red.</li>
+
+                            <li><b>Rango clase B</b>
+                            El rango clase B se emplea en redes de tamaño medio, como organizaciones o universidades. Permite crear un mayor número de redes que el rango A, 16.384 redes, pero con muchos menos equipos conectados a ellas, 65.534 dispositivos. El rango está en 172.16.0.0 a 172.31.255.255; los dos primeros bloques identifican la red y los restantes a los equipos conectados a ella. </li>
+                           
+                        <li><b>Rango clase C</b>
+                            Finalmente el rango clase C es el más común y usado, puesto que es el que se emplea en las redes domésticas. Permite tener muchas más redes, 2.097.152, pero pudiendo conectar muchos menos equipos a cada una de ellas, 254.
+                            El rango C va desde 192.168.0.0 a 192.168.255.255; aquí son los tres primeros bloques los que identifican la red, mientras que el último identifica a los equipos.</li>
+                       </ul> <hr>
+
+                 <h4><b>IP Publica</b></h4>
+                            Una dirección IP pública es aquella que se le asigna a cualquier dispositivo que se conecte de forma directa a Internet, por ejemplo, el router de casa o los servidores donde se alojan las páginas web. La IP pública es visible desde Internet.
+                            La IP pública es una dirección única y nunca se puede repetir. La asignan los proveedores de Internet (ISP) y se la conoce también como dirección IP dinámica, puesto que cambia cada vez que reiniciamos el router o cada cierto período de tiempo.
+
+                            Las direcciones IP públicas también tienen rangos y se corresponden a aquellos que quedan excluidos de los rangos para las IP privadas, yendo desde «1. …» hasta «191. …». De manera que el rango de la IP públicas estará en 
+                          
+                          
+                            <h4><b>Rangos de IP publicas</b></h4>
+                            <ul>
+                            <li> <b> Clase A: </b> 1.0.0.0 a 126.255.255.255</li>
+                                    <li> <b> Clase B: </b> 128.0.0.0 a 191.255.255.255 </li>
+                                        <li> <b> Clase C: </b> 192.0.0.0 a 223.255.255.255</li>
+
+                       </ul>
+                       <td><img src="../Imagenes/modulo 12/modulo12.7.jpg" alt="" height="250"></td>
+
+                <h3>Red Básica en Packet Tracer</h3>
+                <h4>Pasos para agregar una red en packet tracer</h4>
+                <b>Paso 1</b> <br>
+                Primamente se escoge los terminales finales o Pc a conectarse, luego de eso seleccionamos el tipo de conexión es decir el tipo de cable que va a permitir conectar nuestras maquinas al switch, debería quedarte algo así:<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.8.png" alt="" height="250"></td> <br>
+                
+                <b>Paso 2</b> <br>
+                Luego de haber realizado esto asemos el asignamiento de los IP a cada máquina, para ellos hacemos un clip sobre el dispositivo o Pc la cual desplegara una pantalla como la muestra la imagen:<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.9.png" alt="" height="250"></td> <br>
+                <b>Paso 3</b> <br>
+                Luego de de esto seleccionamos en la pestaña escritorio, y pulsamos IP Configuración:  <br>
+                <td><img src="../Imagenes/modulo 12/modulo12.10.png" alt="" height="250"></td> <br>
+                <b>Paso 4</b> <br>
+                En esta parte es donde se asigna el IP estáticas para que se puedan conectar nuestros dispositivos de manera correcta: <br>
+                <td><img src="../Imagenes/modulo 12/modulo12.11.png" alt="" height="250"></td> <br>
+                <b>Paso 5</b> <br>
+                Una vez realizado esto cerramos la ventana y procedemos a realizar esto en todas nuestras Pc, para ello utilizaremos para mi ejemplo la IP: 192.168.1.5 la cual solo variará el ultimo numero es decir 192.168.1.7
+                Luego de eso para comprobar si está bien conectado y se está trasmitiendo realizamos un pin entre maquinas, para ello hacemos un clip sobre el dispositivo o Pc la cual desplegara una pantalla como la vez anterior y esta vez pulsaremos el botón Terminal y realizaremos un ping como muestra la imagen. <br>
+                <b>Paso 6</b><br>
+                Si sale como la muestra la imagen la conexión esta correcta.<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.13.png" alt="" height="250"></td> <br>
+
+
+
+                <h3>Dos redes unidos por Router</h3>
+                <h4>Pasos para unir 2 redes</h4>
+                <b>Paso 1</b> <br>
+                Primero creamos dos Switch asignando cinco ordenadores a cada uno.<br>
+                <b>Paso 2</b> <br>
+                 Utilizamos un router para la interconexión entre Switch.<br>
+                
+                <b>Paso 3</b> <br>
+                 Asignamos las IP a cada una de las maquinas, recordando que en esta ocasión al utilizar un router de por  medio así que debemos especificar con el Switch #1 la IP 192.168.1.1 y para el Switch #2 la IP 192.168.2.1. <br>
+                <b>Paso 4</b> <br>
+                Debemos asignar el Gateway de la siguiente manera. <br>
+                <td><img src="../Imagenes/modulo 12/modulo12.14.jpg" alt="" height="250"></td> <br>
+                <b>Paso 5</b> <br>
+                Conectamos los equipos con su respectivo Switch mediante cable directo. <br>
+                <td><img src="../Imagenes/modulo 12/modulo12.15.jpg" alt="" height="250"></td> <br>
+                <b>Paso 6</b><br>
+                Luego procedemos a la conexión con el router mediante cable directo.<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.16.jpg" alt="" height="250"></td> <br>
+                <b>Paso 7</b><br>
+                Para poder concretar la conexión exitosa, no olvidemos especificar la dirección MAC, la dirección IP, la máscara de la Subred y asegurarnos que el Estado del Puerto este ENCENDIDO.<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.17.jpg" alt="" height="250"></td> <br>
+                <b>Paso 8</b><br>
+                Para comprobar la conexión realizamos un envió de paquetes y listo.<br>
+                <td><img src="../Imagenes/modulo 12/modulo12.18.jpg" alt="" height="250"></td> <br>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <h3>Videos</h3>
+                <h3>comandos en CMD</h3>
+                <iframe width="240" height="200" src="https://www.youtube.com/embed/_t-p2mcE7SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h3>Direccion IP y Mascaras de Subred</h3>
+                <iframe width="240" height="200" src="https://www.youtube.com/embed/SHbBso63X38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <h3>Rangos de Direcciones IP Privadas y Publicas</h3>
+                <iframe width="240" height="200" src="https://www.youtube.com/embed/pcYIsXtq3ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Red Básica en Packet Tracer</h3>
+                <iframe width="240" height="200" src="https://www.youtube.com/embed/kydZEZwr4cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Dos redes unidos por Rout</h3>
+                <iframe width="240" height="200" src="https://www.youtube.com/embed/DzoM3EuPviE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             </p>
+             <h4>Lista de actividades</h4>
+             <Table frame="box">
+            <tr>   
+            <td> <ol>
+             <li>Laboratorio Clase1: CMD y Packet Tracer</li>
+             <li>Laboratorio Clase2: Router Packet Tracer</li>
+             <li>Tarea 1: CMD y BD </li>
+            </ol></td>
+            </tr>
+             </Table>   
+
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>  
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 8</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 8</h1>
+        <h2 id="logo1">Base de Datos</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/Modulo5.html">Modulo 5</a></li>
+            <li ><a href="../modulos/Modulo6.html">Modulo 6</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo8.html">Modulo 8</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Sistema de Gestión de Base de Datos (SGBD)</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                    <h3>Introduccion a Base de Datos</h3>
+                    <h4>¿Qué es una Base de Datos</h4>
+                    Desde un punto de vista muy simple una base de datos es básicamente un sistema para
+                    archivar información en una computadora cuyo propósito general es mantenerla disponible
+                    cuando se solicite. La información en general puede ser cualquier cosa que se considere importante para un individuo u organización<br>
+                <table>
+                    <tr>
+                        <td><img src="../Imagenes/modulo 8/img1.png" alt="" height="220"></td>
+                        <td><img src="../Imagenes/modulo 8/img8.png" alt="" height="120"></td>
+                        <td><img src="../Imagenes/modulo 8/img9.png" alt="" height="120"></td>
+                    </tr>
+                </table>
+                </p>
+                  <table border="0" >
+                        <tr>
+                            <td><h3>Porque utilizar una BD</h3>
+                                Las ventajas de un sistema de BD sobre los métodos tradicionales de mantener registros
+                                en papel serán quizá más evidentes a continuación:
+                                <ul>
+                                    <li>Es compacto: No hacen falta archivos de papeles que pudieran ocupar mucho espacio.</li>
+                                    <li>Es rápido: La máquina puede obtener y modificar datos con mucha mayor velocidad que un ser humano.</li>
+                                    <li>Es menos laborioso: Se elimina gran parte del tedio de mantener archivos a mano.</li>
+                                    <li>Es actual: Se dispone en cualquier momento de la información precisa y al
+                                        día.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Ventajas del enfoque de BD</h3>
+                                A continuación, se explica algunas de las ventajas específicas que emanan del concepto de control centralizado:
+                                <li>Es posible disminuir la redundancia</li>
+                                <li>Es posible evitar la inconsistencia</li>
+                                <li>Es posible compartir los datos</li>
+                                <li>Es posible hacer cumplir las normas</li>
+                                <li>Es posible aplicar restricciones de seguridad</li>
+                                <li>Es posible mantener la integridad</li>
+                            </tr>
+                    </table><br>  
+
+            <p>
+                <h3>Base de Datos Relacionales</h3>
+                Antes de explicar que es una base relacional es importante algunos conceptos Básicos<br>
+                <table border="0" >
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Campo</h3>
+                            Es la unidad más pequeña a la cual uno puede referirse en un programa. Desde el punto de vista del programador representa una característica de un individuo u objeto. Ejemplo
+                            Si quisiéramos almacenar la información de un estudiante los campos serían las características asociadas a este estudiante tales como:
+                            <ul>
+                                <ul>
+                                    <li>Nombre</li>
+                                    <li>Fecha de Nacimiento</li>
+                                    <li>Teléfono etc.</li>
+                                </ul>
+                            </ul>
+
+                        </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registro</h3>
+                            Es una colección de campos de iguales o de diferentes tipos. Siguiendo con el ejemplo diríamos entonces que cada campo representa a un estudiante, el cual está formado por el grupo de campos o características individuales
+                        <table border="1">
+                            <tr>
+                                <td>Carnet</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                            </tr>
+                            <tr>
+                                <td>1590-1001 </td>
+                                <td>Jorge</td>
+                                <td>Lopez</td>
+                            </tr>
+                            <tr>
+                                <td>1590-1002 </td>
+                                <td>Luis</td>
+                                <td>Cordova</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>1590-1003 </td>
+                                <td>Maria</td>
+                                <td>Perez</td>
+                            </tr>
+                        </table>
+                        
+                        </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Archivo</h3>
+                            Es una colección de registros almacenados siguiendo una estructura homogénea.
+                        </tr>
+                </table> 
+
+                <h3>Base de Datos</h3>
+                Podemos decir entonces que una base de datos es una colección 
+                de archivos interrelacionados y cuyo contenido engloba a la 
+                información concerniente (almacenadas en archivos) de una organización,
+                de tal manera que los datos estén disponibles para los usuarios.                
+                Los tres componentes principales de un sistema de base de datos:
+                <ul>
+                    <li>El hadware</li>
+                    <li>El software</li>
+                    <li>Los datos para manejar (así como el personal encargado del manejo del sistema).                    </li>
+                </ul>
+                <br>
+                <table border="0" >
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entidad</h3>
+                            En una base de datos relacional conoceremos como entidad a un objeto real o abstracto acerca del cual se almacenan datos, el cual se diferencia de otros objetos a partir de atributos. Puede ser de diversa naturaleza:
+                            <ul>
+                                <li>Tangible: Persona, vehículo, material.</li>
+                                <li>Intangible: Proyecto, materia, etc.</li>
+                                <li>Eventual: Compra, venta, vuelo, etc.</li>
+                                <li>Rol: Cliente, vendedor, etc.</li>
+                                <li>Localización: Sucursal, bodega, etc.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atributo</h3>
+                            Elemento o dato que describe o identifica cada entidad dándole características propias. Normalmente los atributos son virtualmente ilimitados para una entidad, pero deben seleccionarse los de mayor relevancia para el problema que se está analizando. Ejemplo Para una entidad llamada “Persona”, se podría tener varios atributos como Nombre, Apellido, Peso, Estatura etc.
+                            Habiendo explicado algunos conceptos básicos discutiremos el termino Base de datos Relacional. Una relación es una asociación entre los datos guardados en diferentes archivos o tablas, por ejemplo.
+                            <ul>
+                                <li>Un estudiante se asocia con los cursos asignados en los diferentes semestres</li>
+                                <li>Un cliente se asocia con la emisión de una factura de compra.</li>
+                                <li>Un curso se asocia a un semestre en particular.</li>
+                            </ul>
+                        </tr>
+                </table> 
+
+                <h3>Relación de uno a uno</h3>
+                Un registro de una Entidad A se relaciona únicamente con un registro de una tabla B y viceversa. Este tipo de relación no es común en el mundo de las bases de datos.
+                Ejemplos
+                Supongamos que tenemos una tabla llamada vehículo y otra llamada Matriculas, la relación que se haría entre ambas tablas sería la siguiente: un vehículo solo puede estar asociado a una sola matricula y viceversa.
+                <br>
+                <img src="../Imagenes/modulo 8/img2.png" alt="" height="100">
+                <br><br>Supongamos que almacenamos la información de un empleado en una tabla y en otra tabla guardamos los currículums vitae de los empleados. La relación en este caso es de uno a uno ya que un empleado puede tener solo un currículum vitae y viceversa.
+                <br>
+                <img src="../Imagenes/modulo 8/img3.png" alt="" height="100">
+                
+                <h3>Relación de uno a muchos</h3>
+                Un registro de una Entidad A se relaciona con varios registros de una tabla B. Ejemplos
+                Un Departamento tiene varios municipios, y un municipio solo pertenece a un departamento
+                <br>
+                <img src="../Imagenes/modulo 8/img4.png" alt="" height="100">
+                <br>Un estudiante Municipio tiene muchos ciudadanos, pero un ciudadano solo puede pertenecer a un municipio
+                <br>
+                <img src="../Imagenes/modulo 8/img5.png" alt="" height="100">
+                
+                
+                <h3>Relación de muchos a muchos</h3>
+                Cuando un registro de una entidad A puede estar relacionado con más de un registro de la entidad B y viceversa. En este caso las dos tablas no pueden estar relacionadas directamente, se tiene que añadir una tabla entre las dos que incluya los pares de valores relacionados entre sí. Ejemplo
+                Un estudiante puede asignarse varios cursos, pero un curso también puede tener varios estudiantes asignados.
+
+                <br>
+                <img src="../Imagenes/modulo 8/img6.png" alt="" height="100">
+                Sin embargo esto no puede ser reflejado de esta forma si no que es necesario añadir una nueva tabla para poder registrar la información en una Base de Datos
+                <br>
+                <img src="../Imagenes/modulo 8/img7.png" alt="" height="100">
+
+
+                <h3>Que es una llave primaria</h3>
+                Una llave primaria es aquel atributo (o atributos) que consideramos clave para la identificación de los demás atributos que describen a la entidad. Ejemplo
+                Por ejemplo, si consideramos la entidad ALUMNO este podría tener los siguientes atributos: Carnet, Nombre, Dirección, Teléfono, de todos estos atributos el que podremos designar como llave primaria es el número de carnét, ya que es diferente para cada alumno y este los identifica de forma única dentro de la universidad
+                <br>
+
+                <h3>Que es una llave foranea</h3>
+                Es uno o más campos de una tabla que hacen referencia al campo o campos de llave primaria de otra tabla, una llave foránea indica como esta relacionadas las entidades.
+                Los datos en los atributos de llave primaria y llave foránea deben coincidir en el tipo de datos y tamaño que almacenan, aunque los nombres de los atributos no sean los mismos. Ejemplo en la entidad cliente la llave primaria es No_Cliente y en factura la llave Foránea se llama Cod_Cliente, estos datos se relacionan entre sí de la forma en que en una factura se almacena el código del cliente al que pertenece dicha factura
+                <br>
+
+                <h3>Arquitectura para Sistemas de Base de Datos</h3>
+                Los usuarios no tienen por qué conocer como están organizados y almacenados los datos, es por ese motivo que una base de datos debe presentar los datos de forma que el usuario pueda interpretarlos y modificarlos según las tareas que éste tenga asignados. Evidentemente esto no lo podemos aplicar a un informático que necesite saber dónde se encuentran físicamente los datos para poder tratarlos. Según la visión y la función que realicen los usuarios sobre la BD podemos dividir en tres niveles principales:
+                <table border="0" >
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nivel Interno</h3>
+                            es el nivel más cercano al almacenamiento físico de los datos. Permite escribirlos tal y como están almacenados en la computadora. En este nivel se diseñan los archivos que contienen la información, la ubicación de los mismos y su organización, es decir se crean los archivos de configuración</td>
+                    </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nivel Conceptual</h3>
+                            En este nivel se representan los datos que se van a utilizar sin tener en cuenta aspectos como lo que representamos en el nivel interno. A grandes rasgos este nivel debe ser un panorama de los datos tal como son y no como por fuerza los perciben los usuarios debido a las limitantes del lenguaje o el equipo especifico utilizado</td>
+                    </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nivel Extremo</h3>
+                            es el más cercano al usuario. En este nivel se describen los datos o parte de los datos que más interesan a los usuarios.
+                            Por ejemplo para un usuario final será o bien un lenguaje de consulta, o algún lenguaje de aplicación especial, quizá manejado por una forma, reporte o menú adaptados a ese usuario.s
+                            </td>
+                    </tr>
+                </table> 
+
+                <h3>Administrador de Base de Datos (DBA)</h3>
+                El administrador de la base de datos es la persona que toma las decisiones estratégicas y de políticas con respecto a la información de la base de datos<br>
+
+                <h3>Responsabilidad del DBA</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <li>Definir el esquema conceptual</li>
+                            <li>Definir el esquema interno</li>
+                            <li>Definir procedimientos de respaldo y recuperación</li>
+                            <li>Administrar la estructura de la Base de Datos</li>
+                            <li>Administrar la actividad de los datos</li>
+                        </td>
+                        
+                        <td>
+                            <li>Administrar el Sistema Manejador de Base de Datos</li>
+                            <li>Establecer el Diccionario de Datos</li>
+                            <li>Asegurar la confiabilidad de la Base de Datos</li>
+                            <li>Confirmar la seguridad de la Base de Datos</li>
+                            <li>Entre otras</li>
+                        </td>
+                    </tr>
+                </table>
+                
+                <br>
+
+                <h3>Sistema de Gestión de Base de Datos (SGBD)</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <li>Un usuario solicita acceso, empleando algún sublenguaje de datosdeterminado (por eje. SQL).</li>
+                            <li>El SGBD interpreta esa solicitud y la analiza.</li>
+                        </td>
+                        
+                        <td>
+                            <li>El SGBD inspecciona, en orden, el esquema externo de ese usuario, el esquema conceptual y la definición de la estructura almacenada.</li>
+                            <li>El SGBD ejecuta las operaciones necesarias sobre la base de datos</li>
+                        </td>
+                    </tr>
+                </table>
+                
+                <br>
+
+                <h3>Las funciones del SGBD por lo menos son las siguientes</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Definición de datos</li>
+                                <li>Manipulación de datos</li>
+                                <li>Seguridad e integridad de datos</li>
+                            </ul>
+                        </td>
+                        
+                        <td>
+                            <ul>
+                                <li>Recuperación y concurrencia de los datos</li>
+                                <li>Diccionario de datos</li>
+                                <li>Desempeño</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <h3>Lenguaje de Base de Datos SQL</h3>
+                utilizado para base de datos fue desarrollado entre 1974 y 1975 en IBM, en esos años se le conocías como llamaba SEQUEL (Structured English Query Language) y se utilizaba como interfaz para un sistema experimental de base de datos llamado SYSTEM R.
+                SQL fue introducido por Oracle por primera vez en una base de datos comercial en el año 1979 y pronto se convirtió en un estándar ANSI e ISO dando lugar de allí en adelante a varias versiones mejoradas del lenguaje.
+<br>
+                <table border="0" >
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El DML</h3>
+                            (Data Management Language) lenguaje de manipulación de datos, la cuales cuenta con una gama amplia de sentencias que sirven para recuperar, insertar, borrar, modificar los datos almacenados en las estructuras creadas por el DDL: algunas de las instrucciones que forman parte del DML son: Select, insert, update, delete.
+                        </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El DCL</h3>
+                            (Data Control Language) es la parte menos conocida del SQL , siendo la finalidad controlar el acceso a datos denegando y otorgando privilegios sobre los objetos existentes. Las instrucciones que forman parte del DCL son: Commit, Rollback, Savepoint, save transaction. Lenguaje de Base de Datos SQL
+                        </tr>
+                </table> 
+                <h3>Modelo Entidad-Relación (E/R)</h3>
+                Cuando se utiliza una base de datos para gestionar información, se está plasmando una parte del mundo real en una serie de tablas, registros y campos ubicados en un computador; creándose un modelo parcial de la realidad. Antes de crear físicamente estas tablas en el ordenador se debe realizar un modelo de datos.
+                <br>
+                <table>
+                    <tr>
+                        <td><img src="../Imagenes/modulo 8/img10.png" alt="" height="365"></td>
+                      </tr>
+                </table>
+            </p><br>
+            </div> <!-- /articulo -->
+             <h4>Lista de actividades</h4>
+             <Table frame="box">
+            <tr>   
+            <td> <ol>
+             <li>Tarea(individual) – DBMS y Base de datos – 13 de mar</li>
+            </ol></td>
+            </tr>
+             </Table>
+ 
+
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>  
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

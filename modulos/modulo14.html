@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 14</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 14</h1>
+        <h2 id="logo1">Introducción al Desarrollo Web y HTML</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li class="seleccionado"><a href="../modulos/modulo14.html">Modulo 14</a></li>
+            <li ><a href="../modulos/Modulo15.html">Modulo 15</a></li>
+            <li ><a href="../modulos/Modulo16.html">Modulo 16</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Introduccion de redes</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                    <h3>Internet, Red de redes</h3>
+                    <ul>
+                        <li>Internet es la red de redes que interconecta computadores mediante
+                            diferentes protocolos</li>
+                        <li>Un ordenador se puede conectar a Internet por medio de un servidor de red
+                            (mediante tecnologías diversas)</li>
+                        <li>Un ordenador puede conectarse a una red local y los ordenadores de dicha
+                            red local pueden conectarse a Internet mediante una pasarela</li>   
+                        <li>Existen ordenadores permanentemente conectados a Internet que ofrecen
+                            recursos (son los servidores)</li>
+                        <li>Vlink: Define el color del vínculo ya visitado</li>
+                        <li>Background: Define el archivo gráfico que será desplegado como fondo</li>
+                        <li>Bgsound: Define el archivo de audio que se tocará en la página</li>
+                        <li>Bgproperties: Define el movimiento vertical del fondo</li>
+                     </ul><br>
+                </p>
+                  
+            <p>
+                <h3>Recursos de Internet</h3>
+                <ul>
+                    <li>Los recursos accesibles en Internet se identifican por un URI (identificador de
+                        recurso uniforme)(URL)</li>
+                    <li>p.e. http://www.uv.es/cerveron/paginasweb/index.html</li>
+                    <ol>
+                        <li>el protocolo con que acceder al recurso</li>
+                        <li>el nombre (o dirección) del host</li>
+                        <li>el nombre del recurso</li>
+                    </ol>
+                    <li>Internet es el medio de comunicación para diversas aplicaciones, que utilizan
+                        diferentes protocolos, destacando el correo electrónico, la transferencia de
+                        ficheros (FTP) y la web</li>
+                 </ul>
+                <br>
+
+                <h3>La web</h3>
+                <ul>
+                    <li>La web es un sistema de información distribuido basado en hipertexto</li>
+                    <li>Los usuarios, mediante un navegador (cliente) solicitan recursos (normalmente
+                        páginas web) a un servidor web</li>
+                        <ol>
+                            <li>el cliente envía una petición</li>
+                            <li>el servidor produce una respuesta (una página HTML)</li>
+                            <li>[puede ser de error]</li>
+                        </ol>
+                 </ul><br>
+               
+
+                <h3>Primer Navegador Gráfico</h3>
+                En 1993 Marc Andreesen (estudiante) escribe Mosaic. Precursor de Netscape.
+                <br>
+                <img src="../Imagenes/modulo 14-16/modulo14.2.jpg" alt="" align="center" height="165">
+
+                <h3>Cómo Funciona la Web</h3>
+                <ul>
+                    <li>Para poder visualizar una página web es preciso:</li>
+                    <ol>
+                        <li>Tener un ordenador conectado a Internet:</li>
+                        <li>Establecer una conexión PPP con la máquina del ISP.</li>
+                        <li>El ordenador recibe una dirección IP temporal</li>
+                        <li>Usando DHCP (Dynamic Host Configuration Protocol)</li>
+                        <li>El ordenador recibe la dirección de un servidor de nombres (DNS, Domain Name Server)</li>
+                    </ol>
+                    <li>Iniciar sesión en un navegador Web (ej.: Internet Explorer, Mozilla, Netscape, etc).</li>
+                    <li>Indicar al navegador el URL de la página que se desea "visitar".</li>
+                    <li>El navegador pide al DNS la dirección IP correspondiente al servidor que
+                        contiene el documento cuyo URL se ha indicado.</li>
+                    <li>El navegador abre una sesión TCP con la máquina cuya dirección IP se ha
+                         obtenido.</li>
+                    <li>El navegador solicita al servidor que le transmita el documento (orden GET).</li>
+                    <li>El servidor web envía el documento.</li>
+                    <li>El servidor web envía el documento.
+                    <li>La conexión TCP finaliza.</li>
+                    <li>El navegador muestra el documento.</li>
+                 </ul>
+                <img src="../Imagenes/modulo 14-16/modulo14.3.jpg" alt="" align="center" height="165">
+                <br>
+
+                <h3>WWW es un sistema cliente servidor</h3>
+                <table frame="box">
+                    <tr>
+                        <td><h3>Clientes Web</h3><br>
+                        <p>
+                        – Utilizan el protocolo HTTP para conectar con los servidores.
+                        </p>
+                    <p>
+                        – Solicitan y muestran las páginas web almacenadas en los servidores.
+                    </p>
+                    <p>
+                        – Clientes típicos: navegadores web (Explorer, Firefox).
+                    </p></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Servidores Web</h3><br>
+                        <p>
+                            – "Escuchan" conexiones entrantes desde clientes.
+                        </p>
+                    <p>
+                        – Utilizan el protocolo HTTP para conversar con los clientes.
+                    </p>
+                    <p>
+                        – Almacenan y transmiten páginas web a los clientes.
+                    </p>
+                <p style="color: red;">
+                    – Actualmente interactúan con el usuario y generan dinámicamente páginas web
+                </p><p>
+
+                </p></td>
+                    </tr>
+                </table>
+                <h3>Aplicaciones web</h3>
+                <ul>
+                    <li>La web era al principio un conjunto de páginas fijas</li>
+                    <li>La evolución de la web ha llevado al desarrollo de aplicaciones web</li>
+                    <li>Una aplicación web es un programa informático en la red (en un
+                        servidor) cuya interacción con el usuario sea mediante un navegador</li>   
+                 </ul>
+                <p>
+                    – El programa recibe los inputs del usuario
+                </p>
+                <p>
+                    – El programa genera dinámicamente páginas web que muestran
+información personalizada y en su caso permiten al usuario seguir
+interactuando
+                </p>
+               <br>
+
+                <h3>En lenguaje HTML</h3>
+                <ul>
+                    <li>HTML es un lenguaje que permite incluir texto junto a las indicaciones de cómo
+                        mostrarlo, cómo y dónde incluir imágenes y cómo acceder mediante enlaces a
+                        otros recursos en Internet (y también posibilita la entrada de datos)</li>
+                    <li>El navegador-cliente solicita y recibe del servidor web una página y nos la
+                        presenta formateada</li>
+                    <li>La página puede “pedir” al servidor imágenes (o otros recursos) que están en
+                        archivos distintos de la propia página web y son enviados por el servidor y
+                        presentados por el cliente junto al texto</li>   
+                    <li>Alink: Define el color del vínculo actual o activado en la página</li>
+                    <li>Vlink: Define el color del vínculo ya visitado</li>
+                    <li>Background: Define el archivo gráfico que será desplegado como fondo</li>
+                    <li>Bgsound: Define el archivo de audio que se tocará en la página</li>
+                    <li>Bgproperties: Define el movimiento vertical del fondo</li>
+                 </ul><br>
+
+                <h3>HTML:Qué no es ?</h3>
+                <ul>
+                    <li>No es un procesador de palabra</li>
+                    <li>No es una herramienta de escritorio para diagramación</li>
+                    <li>No es un lenguaje de programación</li>   
+                    <li>No es multimedia</li>
+                    <li>Vlink: Define el color del vínculo ya visitado</li>
+                    <li>Background: Define el archivo gráfico que será desplegado como fondo</li>
+                    <li>Bgsound: Define el archivo de audio que se tocará en la página</li>
+                    <li>Bgproperties: Define el movimiento vertical del fondo</li>
+                 </ul><br>
+
+                <h3>Fundamentos de HTML</h3>
+                <p>
+                    <ul>
+                        <li>Rótulos</li>
+                        <img src="../Imagenes/modulo 14-16/rotulo.jpg" alt="" align="center" height="50">
+                        <li>No sensitivos a mayúsculas y minúsculas</li>
+                        <img src="../Imagenes/modulo 14-16/rotulo2.jpg" alt="" align="center" height="50">
+                        <li>Algunos atributos pueden ser sensibles a mayúsculas y
+                            minúsculas como los nombre de archivos, por ejemplo.</li>
+                        <li>Normalmente van en pares denotando inicio y fin</li>
+                        <img src="../Imagenes/modulo 14-16/rotulo3.jpg" alt="" align="center" height="50">
+                    </ul>
+                </p>
+
+            <P>
+                <h3>Documentos Básicos</h3>
+                <table frame="box">
+                    <tr>
+                        <td colspan="2">Deben incluir</td>
+                    </tr>
+                    <tr>
+                        <td><h3>HEAD Y /HEAD</h3></td>
+                        <TD>Contiene información sobre el documento </TD>
+                    </tr>
+                    <tr>
+                        <td><h3>BODY Y /BODY</h3></td>
+                        <TD>Es el contenido principal del documento</TD>
+                    </tr>
+                    <tr>
+                        <td><h3>HTML Y /HTML</h3></td>
+                        <TD>Contiene los 2 elementos anteriores </TD>
+                    </tr>
+                </table>
+            </P>
+            <P>
+                <h3>Elementos Básicos</h3>
+                <table frame="box">
+                    <tr>
+                        <td><h3>Rótulos Básicos</h3></td>
+                        <TD>HEAD, TITLE, P </TD>
+                    </tr>
+                    <tr>
+                        <td><h3>Rótulos de Formato Fisico</h3></td>
+                        <TD>B, I</TD>
+                    </tr>
+                    <tr>
+                        <td><h3>Rótulos de Formato Lógico</h3></td>
+                        <TD>STRONG, EM, UL, LI </TD>
+                    </tr>
+                    <tr>
+                        <td><h3>Enlaces de Hipertexto</h3></td>
+                        <TD>A HREF="..."</TD>
+                    </tr>
+                </table>
+            </P>
+            <p>
+                <h3>Carácteres especiales</h3>
+                <ul><li>Permiten que diferentes navegadores hagan visibles los
+                    caracteres diagráficos de los idiomas diferentes al inglés:</li></ul>
+                <table frame="box">
+                    <tr>
+                        <td><h3>á é í ó ú</h3></td>
+                        <TD> & aacute;</TD>
+                    </tr>
+                    <tr>
+                        <td><h3>à è ì ò ù</h3></td>
+                        <TD>& agrave;</TD>
+                    </tr>
+                    <tr>
+                        <td><h3>ñ ç ö </h3></td>
+                        <TD>   & ntilde;</TD>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                <h3>Tablas</h3>
+                <ul>
+                    <li>Organización comparativa de información</li>
+                    <li>Ubicación dentro de la página</li>
+                    <li>Múltiples atributos para especificar</li>
+                </ul><br>
+                <img src="../Imagenes/modulo 14-16/tabla.jpg" alt="" align="center" height="165">
+            </p>
+            <p>
+                <h3>Formularios</h3>
+                <ul>
+                    <li>Interactividad</li>
+                    <li>Retroalimentación</li>
+                    <li>Recolección de datos</li>
+                    <li>Pueden tabularse y analizarse</li>
+                    <li>Respuestas personalizadas</li>
+                    <li>Aceptado por todos los navegadores</li>
+                </ul><br>    
+                <img src="../Imagenes/modulo 14-16/" alt="" align="center" height="165">
+            </p>
+            <p>
+            
+                    <h3>Creando Documentos</h3><br>  
+                    <table frame="box" align="center">
+                        <tr>
+                            <TD colspan="2"> Pueden ser creados usando editores simples como Notepad, vi,
+                                emacs.</TD>
+                        </tr>
+                        <tr>
+                            <td><h3>Ventajas</h3></td>
+                            <TD>• Es barato <br>
+                                • Se aprende a comprender el lenguaje HTML</TD>
+                        </tr>
+                        <tr>
+                            <td><h3>Desventajas</h3></td>
+                            <TD>• Es fácil cometer errores <br>
+                                • Necesita comprender la sintáxis HTML</TD>
+                        </tr>
+                    </table>
+            </p>
+            <p>
+                <h3>Herramientas Avanzadas</h3>
+                <ul>
+                    <li>Interface amigable y fácil de usar para crear
+                        documentos</li>
+                    <li>Ocultan a disposición las complejidades del
+                        código HTML</li>
+                    <li>Pueden ser herramientas autónomas o
+                        insertas en procesadores de texto</li>
+                </ul><br>     
+            </p>
+            
+
+
+
+             <h4>Lista de actividades</h4>
+             <Table frame="box">
+            <tr>   
+            <td> <ol>
+             <li>Proyecto parcial (grupal)-Redes</li>
+             <li>Laboratorio Clase HTML </li>
+             <li>Instalación de Visual Code - NotePad++</li>
+            </ol></td>
+            </tr>
+             </Table>   
+
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>  
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+        <div align="center">
+            <h2><a href="./Modulo14.1.html"><input type="button" value="Siguiente" ></a></h2>
+        </div>
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

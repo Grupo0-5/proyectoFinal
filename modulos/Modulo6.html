@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 6</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 6</h1>
+        <h2 id="logo1">Introducción a linux, Virtualización y Ubuntu </h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/Modulo5.html">Modulo 5</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo6.html">Modulo 6</a></li>
+            <li><a href="../modulos/Modulo8.html">Modulo 8</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Variables del Entorno Bash</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                    Un entorno de trabajo en Linux no es más que la configuración que posee un usuario durante su interacción
+                    con el sistema y más específicamente con el shell. Las características del entorno para el caso de bash 
+                    pueden ser la forma en que se muestra el prompt, los alias y funciones definidos y las variables del entorno
+                    de forma general, ya que estas definen el comportamiento de muchos programas y comandos. Las facilidades para
+                    cambiar el entorno de trabajo dependen de las capacidades del shell que se utilice.<br>
+                <table>
+                    <tr>
+                        <td><img src="../Imagenes/modulo 6/img1.png" alt="" height="120"></td>
+                        <td><img src="../Imagenes/modulo 6/img5.png" alt="" height="120"></td>
+                        <td><img src="../Imagenes/modulo 6/img6.png" alt="" height="120"></td>
+                    </tr>
+                </table>
+                </p>
+                  <table border="0" >
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATH</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guarda la secuencia de caminos donde el Shell busca los programas que
+                                se intenten ejecutar en la línea de comandos cuando no se utilizan los caminos absolutos. 
+                                Estos caminos se separan por el carácter “:” Ejemplo:
+                                $ echo $PATH
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guarda el directorio base del usuario actual.
+                                $ echo $HOME
+                                /home/pepe
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PS2</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;guarda el prompt secundario. Este es el que se presenta cuando el shell no puede 
+                                interpretar lo que se ha escrito hasta el momento. Normalmente el Shell interpreta  lo tecleado cuando se pulsa retorno. En caso de que
+                                no se halla completado una estructura interpretable bash muestra el prompt secundario, que por defecto es "> ".
+                                Para forzar a que bash no interprete algo después del retorno se escribe el caracter ``\'' antes del retorno.</td>
+                        </tr>
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PWD</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contiene el directorio de trabajo actual. Esta variable la pueden emplear algunos programas para saber desde donde se invocaron</td>
+                        </tr>
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HISTFILE</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;almacena el nombre absoluto del fichero que contiene el historial de comandos para cada usuario.
+                                También existen HISTFILESIZE, HISTCMD e
+                                HISTSIZE</td>
+                        </tr>
+                        <tr>
+                            <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECONDS</h3>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;almacena la cantidad de segundos transcurridos desde la invocación del shell actual.</td>
+                        </tr>
+                    </table><br>  
+
+            <p>
+                <h3>Ficheros y perfiles</h3>
+                Para cada usuario existen tres ficheros muy importantes que permiten definir en gran medida las 
+                características del shell durante la interacción con este. Estos constituyen shells scripts y se
+                conocen como ficheros perfiles o profiles
+                bash_profile: se ejecuta siempre que se abra una nueva sesión en el sistema.
+                Cada vez que un usuario se conecte al sistema se ejecutará el script .bash_profile, en el caso de que se utilice a bash como shell.
+                Para ser compatible con sus versiones anteriores, bash en caso de que no existiera .bash_profile, ejecuta
+                .bash_login, o sino, .profile. En este fichero se pueden colocar las asignaciones a las variables del entorno siendo debidamente exportadas a través de export.
+                También se puede establecer la máscara de permisos usando umask. Existe además un profile general ubicado en /etc/profile que se ejecuta también siempre que un usuario inicia una sesión en el sistema antes de su profile particular.
+                bash_logout: se ejecuta al terminar una sesión de trabajo. Puede contener comandos para salvar lo hecho durante la sesión.
+                bashrc: se ejecuta siempre que se invoque un nuevo shell. Por lo general en él se colocan las definiciones de funciones y los alias de comandos. El fichero .bashrc que posee cada usuario por defecto ejecuta primero a /etc/bashrc.
+                Cuando se crea un nuevo usuario se le colocan en su directorio base estos tres ficheros cuyos patrones están el directorio /etc/skel.
+
+                <br>
+
+                <h3>Ejecución en bash</h3>
+                Existen dos formas de ejecutar un shell script en el bash: Invocándolo directamente por su nombre. 
+                Para esto el camino al fichero que lo representa debe encontrarse en la variable PATH del entorno,
+                sino será necesario especificar el camino completo del fichero o relativo al directorio actual. 
+                El fichero debe además, poseer los permisos de ejecución adecuados. Lo que ocurrirá en este caso es
+                que se creará un shell hijo que será el que realmente ejecute (interprete) al script. Utilizando el comando source. 
+                De esta forma se ejecutará el script en el shell actual. En este caso no será necesario que el fichero correpondiente posea permisos de ejecución. 
+                El comando se puede sustituir por el caracter punto. Por ejemplo, si se modificara el 
+                bash_profile no será necesario, para activar los cambios, desconectarse y conectarse nuevamente al sistema, simplemente se puede hacer:
+                <br>$ source .bash_profile ó
+                <br>$ . .bash_profile
+                <br>
+
+                <h3>Virtualización</h3>
+                En Informática, la virtualización utiliza el software para imitar las características del hardware y
+                crear un sistema informático virtual. Esto permite a las organizaciones de TI ejecutar más de un sistema
+                virtual, y múltiples sistemas operativos y aplicaciones, en un solo servidor1. Por tanto, este software 
+                tiene la función de simular la existencia del recurso tecnológico que se quiere virtualizar. En los ámbitos de 
+                habla inglesa, este término se suele conocer por el numerónimo "v12n".
+                La IOMMU permite el acceso a dispositivos físicos de manera segura en entornos virtualizados 
+                a través de lo que llamamos device passthrough. Sin la IOMMU no serían posibles entornos virtualizados 
+                que tuviesen acceso de manera correcta al hardware instalado en el sistema, por lo que hoy en día es una pieza 
+                indispensable en todas las CPU que tengan que manejar entornos virtualizados.
+                <br>
+                <a href="https://www.fpgenred.es/VirtualBox/caractersticas_de_virtualbox.html">Mas Informacion.</a>
+                <br>
+
+                <table border="0" >
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtual Box</h3>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fue inicialmente creado por la empresa Innotek bajo licencia propietaria. 
+                            También hicieron una versión gratuita para uso personal o de evaluación con menos funcionalidades, la cual se encontraba regida por la 
+                            licencia PUEL. En enero de 2007, la versión gratuita fue promocionada a libre, se la denominó VirtualBox OSE asignándosele la 
+                            licencia libre GPLv2 y la versión completa de VirtualBox se ofreció gratuitamente bajo licencia PUEL. En febrero de 2008 la empresa 
+                            Innotek fue comprada por Sun Microsystems y esta, a su vez, en enero de 2010 fue adquirida por Oracle, que cambió el nombre de 
+                            VirtualBox a Oracle VM VirtualBox y también modificó la forma de distribuirlo, pues crearon una versión de VirtualBox bajo licencia 
+                            libre GPLv2 a la que le faltaban algunos componentes propietarios (USB 2.0, VRDP, PXE y PCI passthrough) que se podían añadir mediante
+                            la instalación del paquete denominado Oracle VM VirtualBox Extension Pack bajo licencia PUEL. Este formato es el actual hoy en día, 
+                            por lo que si queremos instalar un VirtualBox completo hay que instalar el paquete principal y a continuación el Extension Pack.
+                        <br>
+                        <td><img src="../Imagenes/modulo 6/img2.png" alt="" height="165"></td>
+                        <a href="https://www.fpgenred.es/VirtualBox/caractersticas_de_virtualbox.html">Mas Informacion</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ubuntu</h3>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ubuntu está basado en la distribución Debian GNU/Linux y soporta oficialmente dos arquitecturas de hardware: Intel x86, AMD64. Sin embargo ha sido portada extraoficialmente a cinco arquitecturas más: PowerPC, SPARC (versión "alternate"), IA-64, PlayStation y HP PA-RISC.
+                            Al igual que casi cualquier distribución basada en Linux, Ubuntu es capaz de actualizar a la vez todas las aplicaciones instaladas en la máquina a través de repositorios, a diferencia de otros sistemas operativos comerciales, donde esto no es posible.
+                            Esta distribución ha sido y está siendo traducida a numerosos idiomas, y cada usuario es capaz de colaborar voluntariamente a esta causa, a través de Internet.
+                            
+                        <br>
+                        <td><img src="../Imagenes/modulo 6/img3.png" alt="" height="165"></td>
+                        <a href="https://es.wikipedia.org/wiki/Anexo:Caracter%C3%ADsticas_de_Ubuntu">Mas Informacion.</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Permisos de usuarios</h3>
+                Para que todo sea mucho más claro, vamos a dividir este artículo en varios apartados que permitirán 
+                entender mejor en todo momento de qué se está hablando. Hay que aclarar que todo lo que explicaremos
+                será a través de la línea de comandos, es decir, tendremos que sacar una consola o bien conectarnos 
+                vía SSH a nuestro servidor Linux. Si no estás familiarizado con este componente de Linux tal vez este
+                sea el mejor momento, ya que el nivel de dificultad de lo que vamos a hablar es bajo
+                <br>
+                <a href="https://www.redeszone.net/tutoriales/servidores/controlar-permisos-archivos-carpetas-servidor-linux/">Mas Informacion</a>
+                <br>
+                <table>
+                    <tr>
+                        <td><img src="../Imagenes/modulo 6/img4.png" alt="" height="165"></td>
+                        <td><img src="../Imagenes/modulo 6/img7.png" alt="" height="165"></td>
+                    </tr>
+                </table>
+            
+            </p><br>
+            </div> <!-- /articulo -->
+             <h4>Lista de actividades</h4>
+             <Table frame="box">
+            <tr>   
+            <td> <ol>
+             <li>Laboratorio Clase 1 - Terminal Linux 21 de feb</li>
+             <li>Laboratorio Clase 2 - Examen Corto</li>
+            </ol></td>
+            </tr>
+             </Table>
+ 
+
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>  
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

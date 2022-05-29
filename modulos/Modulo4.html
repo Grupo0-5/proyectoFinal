@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 4</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 4</h1>
+        <h2 id="logo1">Sistema Operativo</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/Modulo1.html">Modulo 1</a></li>
+            <li ><a href="../modulos/Modulo2.html">Modulo 2</a></li>
+            <li><a href="../modulos/Modulo3.html">Modulo 3</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo4.html">Modulo 4</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Sistemas Operativos</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+            <p align="justify">
+                El sistema operativo es un tipo de software encargado de la administración de los 
+                recursos de la computadora tanto del hardware como de otros softwares, siendo este 
+                el que sede los permisos para que dichos programas puedan acceder a los recursos, y 
+                luego se encarga de ordenar las instrucciones de manera jerárquica para no 
+                sobrecargar el CPU. Para abreviar se usan las siglas OS (Operative System), 
+                encargado de las labores básica del sistema y del manejo de recursos, es debido a 
+                esto que es el componente mas importante de la computadora, es tal su importancia 
+                que sin este la computadora no prendería o tendría una interfaz gráfica, ya que 
+                también se encarga de esto, siendo el cambio mas notable cuando hay actualizaciones
+                 de OS.<br><br>
+
+                 Este ya viene instalado en los dispositivos, y me refiero a dispositivos, ya que 
+                 tanto ordenadores como celulares usan un OS para ejecutar los programas. Gracias 
+                 a este se puede realizar las ordenes de acuerdo con lo que desea el usuario usando
+                  la interfaz gráfica, que es donde podemos tocar, clickear botones o arrastrar 
+                  archivos, entre otras acciones comprensibles para el usuario. Ejemplos de familias de sistemas
+                  operativos: Windows, Unix, Linux, DOS, Mac OS, etc.
+                  Un sistema operativo permite interactuar con
+                  el hardware de computadoras, teléfonos celulares,
+                  PDAs, etc.
+                  <br>
+                <table align="center">
+                <td><img src="../Imagenes/modulo4.1.jpg" alt="" height="165" width="210px"></td>
+                <td><img src="../Imagenes/modulo4.2.jpg" alt="" height="165" width="210px"></td>
+                <td><img src="../Imagenes/modulo4.3.jpg" alt="" height="165" width="210px"></td>
+                </table><br>
+
+                <h3>Servicios que ofrece</h3>
+                Los sistemas operativos sin importar la versión o el tipo cuentan con ciertos 
+                servicios en común para el usuario, uno de ellos es la capacidad de poder ejecutar 
+                lo programas instalados en el computador como se menciono anteriormente, 
+                administrando los recursos necesarios para que estos funcionen, también provee 
+                operaciones de E/S (entrada y salida) a los programas ya que estos no cuentan con 
+                esa función. El servicio de manipulación CRUD (Create, Read, Update, delete) de 
+                archivos también lo manipula el sistema operativo, junto a este también manipula 
+                los servicios de comunicación entre el mismo computador o en una red. Y por último 
+                el OS detecta los errores que pueden ocurrir con algunos procesos o componente de 
+                la computadora.<br>
+            </p>
+
+            <p align="justify"><h3>Tipos de Estructuras de un Sistema Operativo</h3>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monilitica</h4>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esta es la estructura de los primeros sistemas operativos, esta constituía en un solo programa   <!--98 caracteres maximo-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compuesto de un conjunto de procedimientos entrelazados, de tal forma que cada uno pudiera 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;llamarse entre sí. Generalmente estas hechas a la media, por lo que eran rápidos y eficientes en 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;su ejecución y gestión, pero ese sería su talón de Aquiles, ya que eran poco flexibles para distintos 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trabajos.La arquitectura Monolitica cuenta con tres caracteristicas basicas:<br>
+                <ul style="margin-left: 100px;">
+                    <li>
+                        Construcción del programa final a base de
+                        módulos compilados separadamente que se
+                        unen a través del ligador.
+                    </li>
+                    <li>
+                        Buena definición de parámetros de enlace
+                        entre las distintas rutinas existentes, que puede
+                        provocar mucho acoplamiento.
+                    </li>
+                    <li>
+                        Carecen de protecciones y privilegios al entrar
+                        a rutinas que manejan diferentes aspectos de
+                        los recursos de la computadora, como
+                        memoria, disco, etc.
+                    </li>
+                </ul>
+                
+
+                <img src="../Imagenes/modulo4.4.jpg" alt="" height="165" align="center">
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De capas</h4>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A medida que las necesidades de los usuarios fueron creciendo se hizo necesaria una mejor    
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;organizacióndel software del OS, ahora en estos modelos el OS contiene subparte y esta organizado 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en forma de niveles. La subdivisión que se hizo fue para que cada una de esas partes estuvieran  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bien definidas y con un claro interface con el resto de los elementos, por lo que se construyo una 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;estructura mas jerárquica. Siendo este el primero, denominado THE (Technische Hogeschool  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eindhoven),tambien se puede pensar como un modelo de multicapas. <!--98 caracteres maximo-->
+                <br><br>
+            </p> 
+                <img src="../Imagenes/modulo4.5.jpg" alt="" height="165" align="center">
+
+            <p align="justify">
+                <h3>Cliente-Servidor (Microkernel)</h3><br>
+                Es el tipo mas reciente de sistema operativo, este puede ser ejecutado en la
+                 mayoría de las computadoras ya sea simples o potentes. Este OS sirve para
+                  cualquier clase de aplicaciones, por lo tanto, cuenta con características 
+                  similares a la de los otros OS, pero este posee un núcleo llamado Microkernel,
+                   que tiene como propósito establecer comunicación a los servidores. De allí el
+                    nombre ya que puede manejar procesos tanto servidores como clientes, ofreciendo
+                     una gran flexibilidad en cuanto a los servicios posibles en el sistema final
+                      a pesar de eso el núcleo solo posee funciones básicas de memoria, procesos de
+                       E/S, archivos y procesos, lo que deja que los servidores puedan proveer más
+                        que el usuario final puede usar.<br>
+            </p>
+
+            <p align="justify"><h3>Componentes</h3>
+                <table border="0" frame="box">
+                    <tr>
+                        <td>Gestor de Memoria</td>
+                        <td>Es el encargado de asignar y designar memoria a los programas, conociendo el momento donde se esta utilizando la memoria y quien la está usando, también es la que decide los servicios de memoria que le ofrecerá a cada proceso.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gestor de archivo</td>
+                        <td>Es el componente encargado de la colección de archivos por nombre y el que permite modifica, crear o eliminar archivos, tambien es que hace el servicio de backup.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gestor de E/S</td>
+                        <td>Los OS modernos proporcionan una I/F estándar entre los programas y los dispositivos, es decir, utilizan las mismas funciones independientemente del dispositivo.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sistema de Protección</td>
+                        <td>Este controla los accesos de los programas, procesos y usuarios al sistema o a los recursos de la computadora, este distingue entre los servicios autorizados y no autorizados, especificando que control se debe de imponer. Este componente no está localizado en el núcleo, sino que es un mecanismo de defensa general de todos los OS.</td>
+                    </tr>
+                    <tr>
+                        <td>Interprete de ordenes</td>
+                        <td>Proceso que maneja la interpretación de órdenes del usuario desde un terminal, para utilizar los servicios que proporciona el SSOO.</td>
+                    </tr>
+                </table><br>
+                <img src="../Imagenes/modulo4.6.jpg" alt="" height="165" align="left"><br><br><br><br><br> <br><br><br><br><br>
+
+                <h4>Actividades del Modulo</h4>
+             <Table frame="box">
+            <tr>   
+            <td><ol>
+            <li>Tarea - Ultimas versiones de OS</li>
+            <Li>Laboratorio - CMD</Li>
+            <li>Tarea1 - CMD</li>
+            </ol></td>
+            </tr>
+             </Table>
+            
+            </p><br><br>             
+
+            <div class="clear"></div>
+            <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>
+        </div> <!-- /contenido -->
+        <div align="center">
+            <h2><a href="./modulo4.1.html"><input type="button" value="Siguiente" ></a></h2>
+        </div>
+            <div class="clear"></div>
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

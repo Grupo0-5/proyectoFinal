@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 2</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 2</h1>
+        <h2 id="logo1">Arquitectura de los ordenadores y C++</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li ><a href="../modulos/Modulo1.html">Modulo 1</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo2.html">Modulo 2</a></li>
+            <li><a href="../modulos/Modulo3.html">Modulo 3</a></li>
+            <li><a href="../modulos/Modulo4.html">Modulo 4</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Principios C++</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                <h3>IDE’s para desarrollar programas en C++</h3>
+                <ul>
+                    <li>Visual Studio <ul>
+                        <li>Microsoft Visual Studio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) para Windows y macOS. Es compatible con múltiples lenguajes de programación, tales como C++, C#, Visual Basic </li>
+                    </ul></li>
+                    <li>DEV C++ <ul>
+                        <li>El Dev-C++, es un IDE para crear aplicaciones utilizando el lenguaje de programación C++, que ocupa muy poco tamaño en el disco duro, ideal para crear programas pequeños en las que solo sea necesario demostrar el uso de estructuras de control y estructuras de datos, estas aplicaciones se pueden compilar rápidamente y ejecutar en forma de consola.</li>
+                    </ul></li>
+                    <li>GCC <ul>
+                        <li>El GNU Compiler Collection (colección de compiladores GNU) es un conjunto de compiladores creados por el proyecto GNU. GCC es software libre y lo distribuye la Free Software Foundation (FSF) bajo la licencia general pública GPL.</li>
+                    </ul></li>
+                    <li>NetBeans <ul>
+                        <li>NetBeans IDE es un entorno de desarrollo integrado de código abierto y gratuito para el desarrollo de aplicaciones en los sistemas operativos Windows, Mac, Linux y Solaris. El IDE simplifica el desarrollo de aplicaciones web, empresariales, de escritorio y móviles que utilizan las plataformas Java y HTML5.</li>
+                    </ul></li>
+                    <li>Borland C++ <ul>
+                        <li>Borland C++ proporciona a los desarrolladores las mejores herramientas para facilitar la migración a sistemas operativos de 32 bits, incluyendo soporte para plataformas de 16 y 32 bits, una nueva versión de OWL (Object Windows Library) y soporte para controles VBX de 32 y 16 bits.</li>
+                    </ul></li>
+                </ul>
+                <h4 align="center"><img src="../Imagenes/modulo2.1.jpg" alt="" height="400" ></h4><br>
+
+                <h3>Visual Studio 2019</h3>
+                Microsoft Visual Studio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) para Windows y macOS. Es compatible con múltiples lenguajes de programación, tales como C++, C#, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual que entornos de desarrollo web, como ASP.NET MVC, Django, etc., a lo cual hay que sumarle las nuevas capacidades en línea bajo Windows Azure en forma del editor Mónaco. <br>
+                Visual Studio permite a los desarrolladores crear sitios y aplicaciones web, así como servicios web en cualquier entorno compatible con la plataforma .NET (a partir de la versión .NET 2002). Así, se pueden crear aplicaciones que se comuniquen entre estaciones de trabajo, páginas web, dispositivos móviles, dispositivos embebidos y videoconsolas, entre otros.<br>
+                A partir de la versión 2005, Microsoft lanzó gratuitamente las ediciones Express, que son versiones básicas separadas por lenguajes de programación o plataforma orientadas a estudiantes y programadores aficionados. Estas ediciones son similares a las ediciones comerciales pero carecen de ciertas características avanzadas de integración. <br>
+                <h4 align="center"><img src="../Imagenes/modulo2.2.png" alt="" height="165" ></h4>
+
+                <h3>DIRECTIVAS DEL PREPROCESADOR</h3>
+                Las siguientes directivas del preprocesador de lenguaje C se encuentran disponibles: <br>
+                Estas directivas son las siguientes: #define, #elif, #else, #endif, #error, #if, #ifdef, #ifndef, #include, #message y #undef.<br>
+                <h4>Sintaxis</h4>
+                <ul>
+                    <li>#define label text</li>
+                    <li>#elif condition</li>
+                    <li>#else</li>
+                    <li>#endif</li>
+                    <li>#error "message"</li>
+                    <li>#if condition</li>
+                    <li>#ifdef label</li>
+                    <li>#ifndef label</li>
+                    <li>#include {"filename" | filename>}</li>
+                    <li>#message "message"</li>
+                    <li>#undef label</li>
+                </ul>
+
+                <h4 align="center"><img src="../Imagenes/modulo2.3.jpg" alt="" height="300" ></h4>
+
+                <h3>DECLARACIONES GLOBALES</h3>
+                Podemos declarar una variable global con la declaración que se coloca fuera de cada función. En este ejemplo, asumimos la variable de tipo int y la inicializamos a un valor arbitrario 123. Se puede acceder a la variable global desde el ámbito de la función main, así como desde cualquier construcción interna (bucle o declaración if) dentro de ella. Las modificaciones de la var_global también son visibles en cada parte de la rutina main.<br>
+                <h4 align="center"><img src="../Imagenes/modulo2.4.jpg" alt="" height="400"></h4>
+                Por otra parte, si se definen también funciones adicionales en el mismo fichero fuente, pueden acceder directamente al valor de global_var y modificarlo en el ámbito de la función. Las variables globales también pueden ser declaradas con un especificador const, lo que obliga a que sólo sean accesibles a través de la unidad de traducción actual (archivo fuente con todos los encabezados incluidos). <br>
+                <h4 align="center"><img src="../Imagenes/modulo2.12.jpg" alt="" height="400"></h4><br>
+
+                <h3>FUNCIONES DEFINIDAS POR EL USUARIO</h3>
+                Las funciones definidas por el usuario permiten crear scripts estructurados. Las funciones definidas por el usuario se deben declarar al principio de un script. La palabra clave FUNCTION identifica el bloque de sentencias de una función definida por el usuario.<br>
+                <h4 align="center"><img src="../Imagenes/modulo2.5.png" alt="" height="400"></h4>
+
+                <h4>TIPOS DE DATOS EN C++</h4>
+                C++ tiene los siguientes tipos fundamentales:
+                <ol>
+                    <li>Caracteres: <ul><li>char (también es un entero), wchar_t</li></ul> </li>
+                    <li>Enteros:<ul><li> short, int, long, long long</li></ul></li>
+                    <li>Números en coma flotante:<ul><li>float, double, long double</li></ul></li>
+                    <li>Booleanos:<ul><li>bool</li></ul></li>
+                    <li>Vacío:<ul><li>void</li></ul></li>
+                </ol>
+                <h4 align="center"><img src="../Imagenes/modulo2.6.jpg" alt="" height="300"></h4>
+                <h4 align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/XYdOLf_iE7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h4>
+            </p><br><br>
+            
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+            <div class="articulo">
+                <h2><a>Arquitectura de la computación</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">El concepto de la arquitectura de las computadoras consiste en un conjunto de técnicas que permiten construir máquinas lógicas generales programables en forma práctica. En materia terminológica se distingue la "arquitectura" de un computador de la "organización" de un computador.<br>
+                <h4 align="center"><img src="../Imagenes/modulo2.7.jpg" alt="" height="300" ></h4><br>
+               
+
+                <h3>Arquitectura de la computación</h3>
+                La arquitectura de una computadora explica la situación de sus componentes y permite determinar las posibilidades de que
+                un sistema informático, con una determinada configuración,
+                pueda realizar las operaciones para las que se va a utilizar. <br>
+               <h4 align="center"><img src="../Imagenes/modulo2.8.jpg" alt="" height="165"></h4> 
+
+                <h3>Componentes de la computadora</h3>
+                <ol>
+                    <li>La tarjeta principal (Mother Board) <ul>
+                        <li>La “tarjeta principal“ (mainboard), o
+                            “tarjeta madre" (motherboard), es el
+                            elemento principal de toda computadora,
+                            en el que se encuentran o al que se
+                            conectan todos los demás dispositivos.</li>
+                            <li>Componentes: <ul>
+                                ✓ zócalo del microprocesador <br>
+                                ✓ ranuras de memoria (SIMM, DIMM...) <br>
+                                ✓ chipset de control <br>
+                                ✓ BIOS <br>
+                                ✓ slots de expansión (ISA, PCI, AGP...) <br>
+                                ✓ memoria caché <br>
+                                ✓ conectores internos <br>
+                                ✓ conectores externos <br>
+                                ✓ conector eléctrico <br>
+                                ✓ pila <br>
+                                ✓ elementos integrados variados <br>
+                            </ul></li>
+                    </ul></li>
+                    <li>La CPU <ul>
+                        <li>Una unidad central de procesamiento, o CPU, es una pieza de hardware que permite que tu computadora interactúe con todas las aplicaciones y programas instalados. Una CPU interpreta las instrucciones del programa y crea la señal de pantalla con la que interactúas cuando utilizas una computadora.</li>
+                        <li>La velocidad de reloj mide la cantidad de ciclos que ejecuta tu CPU por segundo, medida en GHz (gigahertz). Un “ciclo” es técnicamente un pulso sincronizado por un oscilador interno, pero, para nuestros fines, es una unidad básica que ayuda a comprender la velocidad de una CPU</li>
+                    </ul></li>
+                    <li>La memoria <ul>
+                        <li>En informática, la memoria es el dispositivo que retiene, memoriza o almacena datos informáticos durante algún periodo de tiempo. ​La memoria proporciona una de las principales funciones de la computación moderna: el almacenamiento de información y conocimiento.</li>
+                    </ul></li>
+                    <li>Los Buses <ul>
+                        <li>Los buses son los
+                            canales de datos que
+                            interconectan los
+                            componentes de la PC.
+                            Algunos están
+                            diseñados para
+                            transferencias
+                            pequeñas, y otros para
+                            transferencias
+                            mayores.</li>
+                    </ul></li>
+                    <li>La fuente de alimentación <ul>
+                        <li>Una fuente de alimentación eléctrica es un sistema que suministra electricidad a los dispositivos eléctricos. Se utiliza para transformar la energía de la red eléctrica, adaptándola a las necesidades de alimentación de un determinado dispositivo.</li>
+                    </ul></li>
+                </ol><br>
+                <h4 align="center"><img src="../Imagenes/modulo2.9.jpg" height="350"></h4>
+                <h4 align="center">buses de la computacion</h4>
+
+                    Originalmente las
+                        primeras IBM PC,
+                        contaban con un bus
+                        único para
+                        interconectar todas
+                        las componentes del
+                        sistema, llamado
+                        BUS DEL SISTEMA <br>
+                    Con el tiempo éste
+                        empezó a ser incapaz
+                        de soportar los
+                        caudales de datos
+                        que requerían todos
+                        los componentes <br>
+               <h4>Los Buses </h4> 
+                        El bus más importante de la PC se encarga del tráfico
+                        “pesado” entre la CPU y la memoria RAM conocido como : <br>
+                        
+                        Bus Frontal o Frontal Side Bus (FSB)
+                        Bus del sistema ( en PC ́s más antiguas) <br>
+            
+               <h4> Buses genericos </h4>
+                    Bus del sistema,
+                        que es el encargado
+                        de unir la CPU con la
+                        memoria RAM y
+                        otros elementos de
+                        la tarjeta madre. <br>
+                    Bus de
+                        Entrada/Salida, que
+                        une la tarjeta madre
+                        con otros
+                        adaptadores y
+                        tarjetas ( de video,
+                        gráficas, discos
+                        duros etc.)
+                <br>
+                <h4 align="center"><img src="../Imagenes/modulo2.10.jpg" height="350"></h4>
+
+                <h4 align="center">Microprocesadores</h4>
+                Se llama microprocesador o simplemente procesador al circuito integrado central de un sistema informático, en donde se llevan a cabo las operaciones lógicas y aritméticas (cálculos) para permitir la ejecución de los programas, desde el Sistema Operativo hasta el Software de aplicación. <br>
+                Un microprocesador puede operar con una o más CPU (Unidades Centrales de Procesamiento), constituidas cada una por registros, una unidad de control, una unidad aritmético-lógica y una unidad de cálculo en coma flotante (o coprocesador matemático).<br>
+                Los microprocesadores asemejan una pequeña computadora digital en miniatura, por lo que presenta su propia arquitectura y realiza operaciones bajo un programa de control. Dicha arquitectura se compone de: <br>
+
+                ✓  <b>Encapsulado</b> Una cubierta cerámica que recubre el silicio y lo protege de los elementos (como el oxígeno del aire). <br>
+                ✓  <b>Caché</b> Un tipo de memoria ultrarrápida disponible para el procesador, de modo que no emplee memoria RAM sino cuando sea necesario, ya que en los varios niveles de la memoria caché se guardan datos en uso para su recuperación inmediata. <br>
+                ✓  <b>Coprocesador matemático</b> Llamada unidad de coma flotante, es la porción del procesador que se encarga de las operaciones lógicas y formales. <br>
+                ✓  <b>Registros</b> Una memoria breve de trabajo en el procesador, diseñada para llevar el control de su propio funcionamiento y condiciones. <br>
+                ✓  <b>Puertos</b> Los conductos que permiten al procesador comunicar la información con el resto de los componentes del sistema. <br>
+                <h4 align="center"><img src="../Imagenes/modulo2.11.jpg" ></h4>
+                <h4 align="center"><img src="../Imagenes/modulo2.11.1.jpg" height="300"></h4>
+                <h4 align="center"><img src="../Imagenes/modulo2.11.2.jpg" ></h4>
+            </p>
+
+                
+              
+             <center> <iframe width="560" height="315" src="https://www.youtube.com/embed/0zkX6nlpiSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+             <h4>Lista de actividades</h4>
+            <Table frame="box">
+           <tr>   
+           <td> <ol>
+            <li>Tarea 1 - Investigar sobre características de una Computadora</li>
+            <li>Laboratorio Clase 1</li>
+            </ol></td>
+           </tr>
+            </Table>
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>   
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>

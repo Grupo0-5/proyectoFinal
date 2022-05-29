@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta Name="Author" Content="CASS,DJTS" charset="utf-8"/>
+    
+    <title>Modulo 9</title>
+
+    <link rel="stylesheet" href="../css/principal1.css" />
+</head>
+
+<body>
+
+<!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+
+        <!-- Logo -->
+        <h1 id="logo">Modulo 9</h1>
+        <h2 id="logo1">Normalización, XAMMP, WorkBench</h2>
+
+		<div class="clear"></div>
+		
+    </div> <!-- /cabecera -->
+
+     <!-- Menú principal -->
+     <div id="menu">
+        <ul>
+            <li ><a href="../index.html">Inicio</a></li>
+            <li class="seleccionado"><a href="../modulos/Modulo9.html">Modulo 9</a></li>
+            <li ><a href="../modulos/Modulo10.html">Modulo 10</a></li>
+            <li ><a href="../modulos/Modulo11.html">Modulo 11</a></li>
+            <li ><a href="../modulos/Modulo12.html">Modulo 12</a></li>
+            <li><a href="../contactenos.html">Contactenos</a></li>
+        </ul>
+            <div class="clear"></div>
+     </div> <!-- /menú principal -->
+
+     <!-- Contenido -->
+     <div id="contenido">
+
+		<!-- Principal -->
+		<div id="principal">
+
+            <div class="clear"></div>
+            <!-- Articulo -->
+            <div class="articulo">
+                <h2><a>Normalización</a></h2>
+                <p class="info">
+                    <span class="fecha">14-05-2022</span>
+                </p>
+
+                <p align="justify">
+                    <h3>¿Qué es la Normalización?</h3>
+                    <ul>
+                        <li>Es la aplicación de un conjunto de reglas que permite aprobar la construcción de un modelo de base de datos relacionales.</li>
+                        <li>Es el proceso de organizar los datos de una base de datos.</li>
+                        <li>Se incluye la creación de tablas y el establecimiento de relaciones entre ellas según reglas diseñadas tanto para proteger los datos como para hacer que la base de datos sea más flexible al eliminar la redundancia y las dependencias incoherentes.</li>
+                    </ul>
+                    <br>
+                <table>
+                    <tr>
+                        <td><img src="../Imagenes/modulo 9/img1.png" alt="" height="165"></td>
+                        <td><img src="../Imagenes/modulo 9/img11.png" alt="" height="165"></td>
+                    </tr>
+                </table>
+                </p>
+                  
+            <p>
+                <h3>¿Para qué se Normaliza?</h3>
+                <ul>
+                    <li>Evitar la redundancia de los datos (datos iguales).</li>
+                    <li>Los datos redundantes desperdician el espacio de disco y crean problemas de mantenimiento.</li>
+                    <li>Evitar problemas de actualización de los datos en las tablas.</li>
+                    <li>Proteger la integridad de los datos.</li>
+                </ul>
+                <br>
+
+                <h3>¿Para qué se Usan?</h3>
+                <ul>
+                    <li>Para corregir errores en el diseño de la base de datos</li>
+                    <li>Mientras se puedan aplicar más de estas reglas o formas normales a una tabla, habrá menos anomalías o errores lógicos al momento de efectuar el diseño de nuestras tablas.</li>
+                    <li>Si decide infringir una de las tres primeras reglas de la normalización, asegúrese de que su aplicación se anticipa a los problemas que puedan aparecer, como la existencia de datos redundantes y de dependencias incoherentes.</li>
+                </ul>
+                <br>
+                <h3>Forma Normal 1 (FN1)</h3>
+                Una relación esta en FN1 si y solo si todos los atributos son atómicos. Además, debe haber solo una llave primaria. Un atributo es atómico si representa solo un valor. No deben existir mas valores en el campo de la tabla. Si existen, se eliminan y se emplean en nuevas relaciones.
+                Ejemplo: Tenemos la siguiente relación: La llave primaria es factura
+                <br>
+                <td><img src="../Imagenes/modulo 9/img2.png" alt="" height="100"></td>
+                <br>En este caso producto, cantidad y precio no es atómico.
+                ¿Que pasaría si fueran mas de tres productos?
+                Observe los campos sin información. Se eliminan los grupos repetitivos. Se agrega el campo líneo y este formara parte de la llave primaria en conjunto con factura
+                <br>
+                <td><img src="../Imagenes/modulo 9/img3.png" alt="" height="165"></td>
+                <h3>Forma Normal 2 (FN2)</h3>
+                Una relación está en FN2 si y solo si la relación está en FN1 y todos los atributos dependen totalmente de la llave primaria.  No deben depender de algún elemento que la componga, si la llave es compuesta. Si eso ocurre, se eliminan de la relación.
+                Ejemplo: Usando la tabla resultada de FN1
+                Vemos que no todos los atributos dependen totalmente de la llave primaria (factura y línea).
+                <br>
+                <td><img src="../Imagenes/modulo 9/img4.png" alt="" height="165"></td>
+                <br>Se observa que estos son redundantes.
+                factura línea cliente nombre dirección producto Esto nos lleva a crear una nueva tabla con loscampos señalados.
+                Teniendo como llave el campo Factura.
+                <br>
+                <td><img src="../Imagenes/modulo 9/img5.png" alt="" height="165"></td>
+                <br>A esta tabla se le puede llamar encabezado defactura
+                Luego nos queda la tabla con los campos restantes y conservando su misma llave primaria. (factura y línea).
+                <br>
+                <td><img src="../Imagenes/modulo 9/img6.png" alt="" height="165"></td>
+                <br>A esta tabla se le puede llamar detalle de factura.
+                <br>
+
+                <h3>Forma Normal 3 (FN3)</h3>
+                Una relación esta en FN3 si y solo si esta en FN2 y todos los atributos dependen directamente de la llave primaria.No deben existir dependencias transitivas.
+                Una dependencia transitiva existe cuando un elemento depende de otro
+                elemento que depende directamente de la llave primaria. (A->B->C).
+                Ejemplo: Tomando la tabla encabezado de factura de la FN2.
+                En esta tabla existe dependencia transitiva ya que cliente depende
+                de factura pero nombre y dirección dependen de cliente por lo
+                tanto no dependen directamente de la llave primaria
+                <br><th><img src="../Imagenes/modulo 9/img7.png" alt="" height="100"></th>
+                <br>
+                Eliminando las transitividades quedan las siguientes relaciones
+                <table>
+                    <tr>
+                        <th>Tabla Encabezado Factura</th>
+                        <th>
+                            <table border="1">
+                                <tr>
+                                    <th>No.Factura</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha Factura</th>
+                                </tr>
+                                <tr>
+                                    <th>1001</th>
+                                    <th>43</th>
+                                    <th>20120501</th>
+                                </tr>
+                                <tr>
+                                    <th>1002</th>
+                                    <th>55</th>
+                                    <th>20120512</th>
+                                </tr>
+                                <tr>
+                                    <th>1003</th>
+                                    <th>73</th>
+                                    <th>20121220</th>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Tabla Cliente</th>
+                        <th>
+                            <table border="1">
+                            <tr>
+                                <th>idCliente</th>
+                                <th>Nombre</th>
+                                <th>Direccion</th>
+                            </tr>
+                            <tr>
+                                <th>43</th>
+                                <th>Juan</th>
+                                <th>1 av. 2</th>
+                            </tr>
+                            <tr>
+                                <th>55</th>
+                                <th>Juan</th>
+                                <th>5c. z1</th>
+                            </tr>
+                            <tr>
+                                <th>73</th>
+                                <th>byron</th>
+                                <th>4c. 3-1</th>
+                            </tr>
+                        </table></th>
+                    </tr>
+                </table>
+                En ambos casos, los atributos de la relación dependen directamente de la llave primaria.
+                <br>
+            
+                <h3>Forma Normal de Boyce-Codd (FNBC)</h3>
+                Una relación esta en FNBC si y solo si todos sus determinantes son
+                llaves de la relación.
+                Un elemento es determinante cuando un atributo determina a otro
+                (A->C).
+                Si se demuestra que la relación esta en FNBC, tiene que estar en FN2.
+
+            <br>
+            Ejemplo FNBC
+                <ul>
+                    <li>Estudiante(cod-e, rut, cod-asig)</li>
+                    <ul>
+                        <li>Llaves candidatas</li>
+                        <ul>
+                            <li>{cod-e, cod-asig}</li>
+                            <li>{cedula, cod-asig}</li>
+                        </ul>
+                    </ul>
+                </ul>
+            
+                Hay mas de una llave candidata Una llave candidata es un elemento que podría ser llave. Las llaves candidatas son compuestas El resultado serian dos tablas, la primera con la llave (Cod-e, Cod.asig) y la segunda con la llave(Cod-e)
+                <br>
+                <td><img src="../Imagenes/modulo 9/img8.png" alt="" height="165"></td>
+
+                <h3>¿Qué es XAMMP?</h3>
+                <img src="../Imagenes/modulo 9/img9.png" alt="" height="300" width="640">
+                es una herramienta de desarrollo que te permite probar tu desarrollo web basado en PHP en tu propio ordenador sin necesidad de tener acceso a internet. Si eres un diseñador web o desarrollador web que recién está comenzando, no es necesario saber sobre las configuraciones de servidores (aun), ya que XAMPP te provee de una configuración totalmente funcional desde el momento que lo instalas. Básicamente lo extraes y listo. Es bueno acotar que la seguridad de datos no es su punto fuerte, por lo cual no es suficientemente seguro para ambientes grandes o de producción.
+                <a href="https://www.nettix.com.pe/blog/web-blog/que-es-xampp-y-como-puedo-usarlo/">Mas Informacion</a>
+                <br>
+
+                <h3>Instalación de XAMMP</h3>
+                <iframe width="640" height="300" src="https://www.youtube.com/embed/MtllDrDm4cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+                <h3>WorkBench</h3>
+                <img src="../Imagenes/modulo 9/img10.png" alt="" height="300" width="640">
+                <br>Como su nombre sugiere, MySQL Workbench es una herramienta de escritorio para administrar el servidor de base de datos MySQL y la base de datos. MySQL Workbench integra muchas herramientas para ayudar a simplificar el trabajo de la base de datos. Es principalmente una herramienta de diseño de bases de datos visuales que integra las siguientes instalaciones:
+                
+                <ul>
+                    <li>Crear una base de datos</li>
+                    <li>Administración de propiedades y acceso de la base de datos</li>
+                    <li>Desarrollar en la base de datos</li>
+                    <li>Diseño de estructura de la base de datos</li>
+                    <li>Gestión y mantenimiento de la base de datos.</li>
+                </ul>
+                Casi todos lo usan en un proyecto de desarrollo de software utilizando la base de datos MySQL. Todos incluyen desarrolladores, administradores de bases de datos y arquitectos de software.
+                <a href="https://programmerclick.com/article/70442224645/">Mas Informacion</a><br>
+
+                <h3>Instalación de WorkBench</h3>
+                El video tiene restircciones de edad, Favor de abrirlo en youtube
+                <iframe width="640" height="300" src="https://www.youtube.com/embed/sGw4dWpPFTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+             </p>
+             <h4>Lista de actividades</h4>
+             <Table frame="box">
+            <tr>   
+            <td> <ol>
+             <li>Tarea 1(individual) - Instalar XAMMP Y WorkBench - 15 De Marzo</li>
+             <li>Laboratorio clase 1 - Mysql - 16 De Marzo</li>
+             <li>Laboratorio clase 2 - Workbench - 18 de Marzo</li>
+            </ol></td>
+            </tr>
+             </Table>   
+
+
+             <h2 align="right"><a href="#logo" ><input type="button" value="Arriba"></a></h2>  
+            </div> <!-- /articulo -->
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+
+            <div class="clear"></div>
+        </div> <!-- /contenido -->
+    
+        <!-- Pie de página -->
+    <div id="pie">
+        <img src="../Imagenes/logo esquina.png" align="right" height="">
+        <p id="copyright">&copy; 2022 Grupo5</p>
+    </div> <!-- /pie de página -->
+    <!-- Pie de página -->
+    <div id="pie1">
+        <p id="copyright">&copy; Derechos reservados</p>
+    </div> <!-- /pie de página -->
+    </div> <!-- /contenedor -->
+    
+    </body>
+    </html>
